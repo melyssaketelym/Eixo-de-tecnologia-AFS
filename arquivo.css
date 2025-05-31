@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box; /* Faz com que padding e margin não alterem o tamanho das barras */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F7F8;
+  color: #0f0f06;
+}
+
+.top-bar {
+  background-color: #06101A;
+  color: #f8f7f3;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; /* Garante que a barra fique alinhada à esquerda */
+  z-index: 1000;
+}
+
+.nav-bar {
+  background-color: #000000;
+  padding: 10px 0;
+  position: fixed;
+  top: 90px; /* Altura da top-bar */
+  width: 100%;
+  left: 0; /* Garante que a barra de navegação fique alinhada à esquerda */
+  z-index: 999;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-bar a {
+  color: #44439e;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-bar a:hover {
+  color: #ffffff;
+}
+
+.content {
+  padding-top: 140px; /* Espaço para top-bar + nav-bar */
+  text-align: center;
+}
+
+.logo-area img {
+  width: 200px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.professores {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  padding: 40px 0;
+  background-color: #184a7c;
+  color: #FFD700;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.texto-centralizado {
+  text-align: center;
+}
+
+.professores h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+  
+  .prof-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .prof-card {
+    background-color: #000000;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    color: #ffffff;
+  }
+  
+  .prof-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .prof-card h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #FFD700;
+  }
+  
+  .prof-card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .paragrafo {
+ max-width: 600px;
+ font-size: 18px;
+ line-height: 1,6;
+  }
+  .centro{
+display: flex;
+justify-content: center;
+align-items: 100vh;
+text-align: center;
+  }
+ 
+  .h2{
+text-align: center;
+font-family:'playfair didplay', serif;
+font-size: 3.rem;
+  }
+
+  
+/* imagem*/
+  .container-imagens {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+  }
+  
+  .circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sobreposta {
+    margin-left: -40px; /* sobreposição */
+    z-index: 1;
+  }
+
+
+
+ /* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container dos cartões */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Estilo dos cartões */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Conteúdo do cartão */
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+/* Botão/link para o mapa */
+.map-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #005aa7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.map-link:hover {
+  background-color: #004080;
+}
+
+/*projeto*/ 
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e7ebf0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projetos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.rem;
+  margin-bottom: 2rem;
+  color: #000000;
+  font-family:'playfair didplay', serif;
+}
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projeto-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(39, 35, 35, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.projeto-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.conteudo {
+  padding: 1rem;
+}
+
+.conteudo h3 {
+  margin-top:0 ;
+  color:z#218508;
+  font-size: 1.3rem;
+  
+}
+
+.conteudo p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/*olimpiadas*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  margin:0 ;
+  padding: 2rem;
+  color: #222;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+.olimpiada {
+  margin-bottom: 3rem;
+}
+
+.olimpiada h2 {
+  font-size: 1.8rem;
+  color: #311073;;
+}
+
+.olimpiada p {
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.olimpiada img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os cartões de empregados */
+.card-empregados {
+  position: relative;
+  overflow: hidden; /* Garante que a imagem não ultrapasse o card */
+  border-radius: 10px; /* Mantém bordas arredondadas */
+  width: 350px; /* Largura do card */
+  height: 290px; /* Altura do card */
+}
+
+.card-empregados img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do card */
+  height: 100%; /* Faz a imagem ocupar toda a altura do card */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+.card-empregados .card-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  color: #fff;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+}
+
+
+
+/* Fontes */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+h1, h2, h3, .titulo, .h2 {
+  font-family: 'Poppins', 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-bar a, button, .map-link {
+  font-family: 'Poppins', 'Lato', Arial, sans-serif;
+  font-weight: 600;
+}
+
