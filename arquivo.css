@@ -19,6 +19,7 @@ body {
   top: 0;
   left: 0; /* Garante que a barra fique alinhada à esquerda */
   z-index: 1000;
+  font-size: 16px;
 }
 .nav-bar {
   background: #fff;
@@ -50,7 +51,7 @@ body {
   text-decoration: none;
   font-family: 'Poppins', 'Lato', Arial, sans-serif;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   padding: 8px 18px;
   border-radius: 8px;
   transition: background 0.2s, color 0.2s;
