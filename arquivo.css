@@ -1,155 +1,16 @@
-* {
-  box-sizing: border-box; /* Faz com que padding e margin não alterem o tamanho das barras */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #F5F7F8;
-  color: #0f0f06;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-.top-bar {
-  background-color: #051b32;
-  color: #e8ebf0;
-  padding: 1px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0; /* Garante que a barra fique alinhada à esquerda */
-  z-index: 1000;
-}
-.nav-bar {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(24,74,124,0.10);
-  border-radius: 0 0 18px 18px;
-  padding: 6px 0;
-  position: fixed;
-  top: 65px; /* ajuste conforme altura da top-bar */
-  width: 100%;
-  left: 0%;
-  z-index: 999;
-  transition: box-shadow 0.2s;
-}
-
-.nav-bar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.nav-bar li {
-  display: inline-block;
-  margin: 0 24px;
-}
-
-.nav-bar a {
-  color: #184a7c;
-  text-decoration: none;
-  font-family: 'Poppins', 'Lato', Arial, sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-  padding: 5px 18px;
-  border-radius: 8px;
-  transition: background 0.2s, color 0.2s;
-  letter-spacing: 1px;
-}
-
-.nav-bar a:hover,
-.nav-bar a:focus {
-  background: #22405d;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(24,74,124,0.10);
-}
-
-.nav-bar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.nav-bar li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.nav-bar a {
-  color: #44439e;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.nav-bar a:hover {
-  color: #ffffff;
-}
-
-.content {
-  padding-top: 140px; /* Espaço para top-bar + nav-bar */
-  text-align: center;
-}
-
-.logo-area img {
-  width: 200px;
-  height: auto;
-  margin-top: 30px;
-}
-
-.professores {
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
-  padding: 40px 0;
-  background-color: #184a7c;
-  color: #FFD700;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.texto-centralizado {
-  text-align: center;
-}
-
-.professores h2 {
-  margin-bottom: 30px;
-  font-size: 28px;
-}
-  
-  .prof-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .prof-card {
-    background-color: #000000;
-    border-radius: 12px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-    color: #ffffff;
-  }
-  
-  .prof-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .prof-card h3 {
-    margin: 10px 0 5px;
-    font-size: 20px;
-    color: #FFD700;
-  }
-  
-  .prof-card p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
   
   .paragrafo {
  max-width: 600px;
@@ -254,7 +115,7 @@ body {
   background-color: #004080;
 }
 
-/*projeto*/ 
+
 
 body {
   margin: 0;
@@ -318,8 +179,7 @@ body {
   font-size: 0.95rem;
   line-height: 1.5;
 }
-
-/*olimpiadas*/
+/* Estilo geral do corpo */
 body {
   font-family: Arial, sans-serif;
   background-color: #fafafa;
@@ -397,5 +257,9 @@ h1, h2, h3, .titulo, .h2 {
 .nav-bar a, button, .map-link {
   font-family: 'Poppins', 'Lato', Arial, sans-serif;
   font-weight: 600;
-}
+} 
+
+
+
+
 
